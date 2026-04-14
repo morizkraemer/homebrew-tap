@@ -5,21 +5,21 @@
 class Gitwit < Formula
   desc "A minimal terminal UI for git"
   homepage "https://github.com/morizkraemer/gitwit"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/morizkraemer/gitwit/releases/download/v0.1.7/gitwit_darwin_amd64.tar.gz"
-      sha256 "7a9438f6ab61e0432281f6a5e5abf003c1709a8a19535ae596112a3f32cf2a6b"
+      url "https://github.com/morizkraemer/gitwit/releases/download/v0.1.8/gitwit_darwin_amd64.tar.gz"
+      sha256 "ea0172fa30304cdebd032c5442bf0bf1d649631b4f93aaf1903ae6ad10882f32"
 
       define_method(:install) do
         bin.install "gitwit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/morizkraemer/gitwit/releases/download/v0.1.7/gitwit_darwin_arm64.tar.gz"
-      sha256 "833140da341c6868b3600c01d37431c271cf5b96efb7a19c0a109def93678d7f"
+      url "https://github.com/morizkraemer/gitwit/releases/download/v0.1.8/gitwit_darwin_arm64.tar.gz"
+      sha256 "46c6b931fd212e3cd25e3678f8bafb4f3f461bfe3f4c95d5e9f2ce21767bcff8"
 
       define_method(:install) do
         bin.install "gitwit"
@@ -29,15 +29,15 @@ class Gitwit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/morizkraemer/gitwit/releases/download/v0.1.7/gitwit_linux_amd64.tar.gz"
-      sha256 "6653e5caa0f4a01c46c728122e222c1661652e897ded204954dd99624104e2a7"
+      url "https://github.com/morizkraemer/gitwit/releases/download/v0.1.8/gitwit_linux_amd64.tar.gz"
+      sha256 "43a088a850a684e7f4b195b04a4e9d0f57aaaa9af627dee937a7b5964e981050"
       define_method(:install) do
         bin.install "gitwit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/morizkraemer/gitwit/releases/download/v0.1.7/gitwit_linux_arm64.tar.gz"
-      sha256 "4fc4eb1cd103df0e624df652c9c62776c7bcef32d720fe97b626d1f6a41a1ddd"
+      url "https://github.com/morizkraemer/gitwit/releases/download/v0.1.8/gitwit_linux_arm64.tar.gz"
+      sha256 "246373b8e65e11a85756c7be6fc517a056a071bcb70105b9bec7de5b31655a5e"
       define_method(:install) do
         bin.install "gitwit"
       end
